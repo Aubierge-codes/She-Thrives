@@ -21,3 +21,11 @@
     });
   });
   searchInput.addEventListener('input', applyFilters);
+
+  const findMentorsBtn = document.getElementById('findMentorsBtn');
+  if (findMentorsBtn) {
+    findMentorsBtn.addEventListener('click', () => {
+      applyFilters();
+      document.getElementById('mentorGrid').scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+  }
