@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Skill Up & Practice — SheThrives</title>
+<link rel="stylesheet" href="skills.css">
+<script src="skills.js"></script>
+</head>
+<body>
+
+<header>
+  <div class="nav">
+    <a href="index.html" class="logo">SheThrives</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="opportunities.html">Opportunities</a></li>
+      <li><a href="skills.html" aria-current="page">Skills</a></li>
+      <li><a href="mentorship.html">Mentorship</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-right">
+      <div class="search-box">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+        <input type="text" placeholder="Search...">
+      </div>
+      <a href="login.html" class="login-link">Log In</a>
+      <a href="dashboard.html" class="login-link">Dashboard</a>
+      <a href="contact.html" class="join-btn">Join Us</a>
+    </div>
+  </div>
+</header>
+
+<section class="hub-hero">
+  <div class="wrap">
+    <h1>Skill Up &amp; Practice</h1>
+    <p>Master new abilities through interactive modules and weekly challenges designed for your growth.</p>
+  </div>
+</section>
+
+<section class="progress-strip">
+  <div class="wrap">
+    <div class="progress-card">
+      <div class="progress-info">
+        <div class="ring"><span>40%</span></div>
+        <div>
+          <h3>2 of 5 modules complete this month</h3>
+          <p>Keep going — you're on a 3-day learning streak.</p>
+        </div>
+      </div>
+      <button class="resume-btn">Resume Learning</button>
+    </div>
+  </div>
+</section>
+
+<section class="section-block">
+  <div class="wrap">
+    <div class="section-head"><h2>Explore Categories</h2></div>
+    <div class="categories" id="categories">
+      <button class="cat-btn active" data-cat="coding">
+        <span class="cat-icon">&lt;/&gt;</span>
+        <span>Coding</span>
+      </button>
+      <button class="cat-btn" data-cat="finance">
+        <span class="cat-icon">$</span>
+        <span>Financial Literacy</span>
+      </button>
+      <button class="cat-btn" data-cat="leadership">
+        <span class="cat-icon">☖</span>
+        <span>Leadership</span>
+      </button>
+      <button class="cat-btn" data-cat="marketing">
+        <span class="cat-icon">▶</span>
+        <span>Digital Marketing</span>
+      </button>
+    </div>
+  </div>
+</section>
+
+<section class="section-block">
+  <div class="wrap">
+    <div class="sidebar-layout">
+      <div>
+        <div class="section-head"><h2>Recommended Modules</h2></div>
+        <div class="modules-grid" id="modulesGrid">
+
+          <article class="module-card" data-cat="coding">
+            <h3>Python Basics for Beginners</h3>
+            <div class="meta-row"><span class="pill-level">Beginner</span><span class="dot"></span><span>2 Hours</span></div>
+            <p>Start your programming journey with foundational concepts, syntax, and hands-on exercises.</p>
+            <div class="bar-track"><div class="bar-fill" style="width:20%"></div></div>
+            <button class="btn-dark">Start Learning</button>
+          </article>
+
+          <article class="module-card" data-cat="leadership">
+            <h3>Pitching Your Idea</h3>
+            <div class="meta-row"><span class="pill-level">Intermediate</span><span class="dot"></span><span>45 Mins</span></div>
+            <p>Learn the art of crafting a compelling narrative to secure buy-in for your projects and ideas.</p>
+            <div class="bar-track"><div class="bar-fill" style="width:60%"></div></div>
+            <button class="btn-outline">Continue Module</button>
+          </article>
+
+          <article class="module-card" data-cat="finance">
+            <h3>Budgeting on Your First Salary</h3>
+            <div class="meta-row"><span class="pill-level">Beginner</span><span class="dot"></span><span>1 Hour</span></div>
+            <p>Build habits that stick: track spending, set savings goals, and plan for the unexpected.</p>
+            <div class="bar-track"><div class="bar-fill" style="width:0%"></div></div>
+            <button class="btn-dark">Start Learning</button>
+          </article>
+
+          <article class="module-card" data-cat="marketing">
+            <h3>Growing an Audience on a Budget</h3>
+            <div class="meta-row"><span class="pill-level">Intermediate</span><span class="dot"></span><span>1.5 Hours</span></div>
+            <p>Practical, low-cost tactics for building a following and telling your story online.</p>
+            <div class="bar-track"><div class="bar-fill" style="width:0%"></div></div>
+            <button class="btn-dark">Start Learning</button>
+          </article>
+
+        </div>
+      </div>
+
+      <aside class="up-next-card">
+        <h3>Pitching Your Idea</h3>
+        <div class="meta-row"><span class="pill-level">Intermediate</span><span class="dot"></span><span>45 Mins</span></div>
+        <p>Learn the art of crafting a compelling narrative to secure buy-in for your projects and ideas.</p>
+        <button class="btn-outline" style="width:100%;text-align:center;">Continue Module</button>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-wrap">
+    <p>© 2024 SheThrives. Built for Rwandan girls, by their community.</p>
+    <ul class="footer-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="opportunities.html">Opportunities</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li><a href="mentorship.html">Mentorship</a></li>
+    </ul>
+  </div>
+</footer>
+
+</body>
+</html>

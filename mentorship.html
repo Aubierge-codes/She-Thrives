@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Find Your Guide to Excellence — SheThrives</title>
+<script src="mentorship.js"></script>
+<link rel="stylesheet" href="mentorship.css">
+</head>
+<body>
+
+<header>
+  <div class="nav">
+    <a href="index.html" class="logo">SheThrives</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="opportunities.html">Opportunities</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li><a href="mentorship.html" aria-current="page">Mentorship</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-right">
+      <div class="search-box">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+        <input type="text" placeholder="Search...">
+      </div>
+      <a href="login.html" class="login-link">Log In</a>
+      <a href="dashboard.html" class="login-link">Dashboard</a>
+      <a href="contact.html" class="join-btn">Join Us</a>
+    </div>
+  </div>
+</header>
+
+<section class="mentor-hero">
+  <div class="wrap">
+    <h1>Find Your Guide to Excellence</h1>
+    <p>Connect with successful Rwandan women who have walked the path before you. Get the guidance, support, and networks you need to thrive.</p>
+    <div class="hero-search">
+      <span class="hero-search-icon">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+      </span>
+      <input type="text" id="mentorSearch" placeholder="Search by industry, skill, or name...">
+      <button type="button">Find Mentors</button>
+    </div>
+  </div>
+</section>
+
+<section class="section-block">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Featured Mentors</h2>
+      <a href="mentorship.html" class="view-all">View All →</a>
+    </div>
+    <div class="filter-chips" id="fieldFilters">
+      <button class="chip active" data-field="all">All Fields</button>
+      <button class="chip" data-field="tech">Technology</button>
+      <button class="chip" data-field="biz">Business &amp; Entrepreneurship</button>
+      <button class="chip" data-field="med">Medicine</button>
+    </div>
+
+    <div class="mentor-grid" id="mentorGrid">
+
+      <article class="mentor-card c1" data-field="tech">
+       <div class="mentor-media">
+  <img
+    src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=800&q=80"
+    alt="Woman working in a professional office"
+  >
+  <span class="field-tag tag-tech">Technology</span>
+</div>
+        <div class="mentor-body">
+          <h3>Aline Mutoni</h3>
+          <p class="mentor-role">Senior Software Engineer at Irembo</p>
+          <p>Passionate about building scalable systems and empowering young women to break into tech. Let's talk about...</p>
+          <div class="mentor-actions">
+            <button class="btn-dark">Book a Session</button>
+            <button class="btn-outline">View Profile</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="mentor-card c2" data-field="biz">
+       <div class="mentor-media">
+  <img
+    src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=800&q=80"
+    alt="Women collaborating in business"
+  >
+  <span class="field-tag tag-biz">Business &amp; Entrepreneurship</span>
+</div>
+        <div class="mentor-body">
+          <h3>Grace Umutoni</h3>
+          <p class="mentor-role">Marketing Director at MTN Rwanda</p>
+          <p>Specializing in brand strategy and digital marketing. I can help you craft compelling narratives, build your personal brand, and...</p>
+          <div class="mentor-actions">
+            <button class="btn-dark">Book a Session</button>
+            <button class="btn-outline">View Profile</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="mentor-card c3" data-field="med">
+       <div class="mentor-media">
+  <img
+    src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=800&q=80"
+    alt="Female medical professional"
+  >
+  <span class="field-tag tag-med">Medicine</span>
+</div>
+        <div class="mentor-body">
+          <h3>Dr. Sarah Kirenga</h3>
+          <p class="mentor-role">Chief Medical Officer</p>
+          <p>Navigating medical school and beyond. I offer guidance on specializing, balancing life, and demanding medical careers.</p>
+          <div class="mentor-actions">
+            <button class="btn-dark">Book a Session</button>
+            <button class="btn-outline">View Profile</button>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<section class="how-it-works">
+  <div class="wrap">
+    <div class="section-head"><h2>How Mentorship Works</h2></div>
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">1</div>
+        <h3>Find a mentor</h3>
+        <p>Search by industry, skill, or name to find someone whose path matches where you want to go.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <h3>Book a session</h3>
+        <p>Request a time that works for you. Most mentors respond within two business days.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <h3>Keep growing</h3>
+        <p>Follow up after each session, track what you've learned, and build a lasting connection.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-wrap">
+    <p>© 2024 SheThrives. Built for Rwandan girls, by their community.</p>
+    <ul class="footer-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="opportunities.html">Opportunities</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li><a href="mentorship.html">Mentorship</a></li>
+    </ul>
+  </div>
+</footer>
+
+</body>
+</html>

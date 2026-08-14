@@ -1,0 +1,135 @@
+:root{
+  --ink:#111214;
+  --paper:#ffffff;
+  --hero-bg:#a9b4cf;
+  --hero-bg-2:#b7c0d8;
+  --section-bg:#f4f5f7;
+  --teal:#1f8f83;
+  --teal-dark:#146b62;
+  --muted:#5b5f6b;
+  --line:#e4e6ea;
+  --radius:14px;
+}
+*{box-sizing:border-box;}
+body{
+  margin:0;
+  font-family:"Helvetica Neue", Arial, sans-serif;
+  color:var(--ink);
+  background:var(--paper);
+  -webkit-font-smoothing:antialiased;
+}
+h1,h2,h3{font-family:Georgia,"Times New Roman",serif;margin:0;font-weight:400;}
+a{color:inherit;text-decoration:none;}
+button,input{font-family:inherit;}
+
+/* ===== Header (shared) ===== */
+header{border-bottom:1px solid var(--line);background:var(--paper);position:sticky;top:0;z-index:10;}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:24px;padding:18px 32px;max-width:1180px;margin:0 auto;}
+.logo{font-family:Georgia,serif;font-size:1.25rem;white-space:nowrap;}
+.nav-links{display:flex;gap:32px;list-style:none;margin:0;padding:0;font-size:0.92rem;font-weight:600;}
+.nav-links a{opacity:0.6;transition:opacity .15s ease;padding-bottom:4px;border-bottom:2px solid transparent;}
+.nav-links a:hover, .nav-links a:focus-visible{opacity:1;}
+.nav-links a[aria-current="page"]{opacity:1;border-bottom-color:var(--ink);}
+.join-btn{background:var(--ink);color:#fff;padding:11px 22px;border-radius:6px;font-size:0.88rem;font-weight:600;border:1px solid var(--ink);white-space:nowrap;transition:background .15s ease,color .15s ease;}
+.join-btn:hover, .join-btn:focus-visible{background:#fff;color:var(--ink);}
+
+/* ===== Login ===== */
+.login-main{
+  min-height:calc(100vh - 130px);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background:linear-gradient(160deg, var(--hero-bg) 0%, var(--hero-bg-2) 100%);
+  padding:56px 24px;
+}
+.login-card{
+  width:100%;
+  max-width:420px;
+  background:#fff;
+  border-radius:var(--radius);
+  border:1px solid rgba(255,255,255,0.6);
+  box-shadow:0 24px 48px -24px rgba(20,20,30,0.35);
+  padding:40px 36px 34px;
+}
+.login-head{margin-bottom:28px;text-align:center;}
+.login-head h1{font-size:1.9rem;margin-bottom:10px;}
+.login-head p{color:var(--muted);font-size:0.92rem;line-height:1.55;margin:0;}
+
+.login-form .form-row{margin-bottom:18px;}
+.login-form label{
+  display:block;
+  font-size:0.85rem;
+  font-weight:600;
+  margin-bottom:8px;
+}
+.login-form input[type="email"],
+.login-form input[type="password"]{
+  width:100%;
+  border:1px solid var(--line);
+  border-radius:8px;
+  padding:12px 14px;
+  font-size:0.92rem;
+  color:var(--ink);
+  background:#fbfbfc;
+  transition:border-color .15s ease;
+}
+.login-form input[type="email"]:focus,
+.login-form input[type="password"]:focus{
+  outline:none;
+  border-color:var(--teal);
+  background:#fff;
+}
+
+.form-options{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  margin:4px 0 22px;
+  font-size:0.85rem;
+}
+.remember{display:flex;align-items:center;gap:8px;color:var(--muted);cursor:pointer;}
+.remember input{accent-color:var(--teal-dark);}
+.forgot-link{color:var(--teal-dark);font-weight:600;}
+.forgot-link:hover{text-decoration:underline;}
+
+.btn-solid{
+  width:100%;
+  background:var(--ink);
+  color:#fff;
+  padding:14px 30px;
+  border-radius:6px;
+  font-weight:600;
+  font-size:0.95rem;
+  border:1px solid var(--ink);
+  cursor:pointer;
+  transition:background .15s ease;
+}
+.btn-solid:hover{background:#000;}
+
+.signup-hint{
+  text-align:center;
+  margin:22px 0 0;
+  font-size:0.88rem;
+  color:var(--muted);
+}
+.signup-hint a{color:var(--teal-dark);font-weight:600;}
+.signup-hint a:hover{text-decoration:underline;}
+
+/* ===== Footer (shared) ===== */
+footer{background:#fff;border-top:1px solid var(--line);padding:36px 24px;}
+.footer-wrap{max-width:1180px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px;}
+.footer-wrap p{margin:0;font-size:0.82rem;color:var(--muted);}
+.footer-links{display:flex;gap:22px;list-style:none;padding:0;margin:0;font-size:0.82rem;flex-wrap:wrap;}
+.footer-links a{color:var(--muted);}
+.footer-links a:hover{color:var(--ink);}
+
+:focus-visible{outline:2px solid var(--teal-dark);outline-offset:2px;}
+@media (prefers-reduced-motion: reduce){*{transition:none !important;}}
+
+@media (max-width:900px){
+  .nav-links{display:none;}
+  .nav{padding:16px 20px;}
+}
+@media (max-width:480px){
+  .login-card{padding:32px 24px 28px;}
+}
